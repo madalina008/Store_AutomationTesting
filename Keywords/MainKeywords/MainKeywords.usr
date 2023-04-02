@@ -13,6 +13,10 @@ DevelopTool=AQT
 [Actions]
 Action0=Action0\Script.mts
 SignUp=Action1\Script.mts
+Login=Action2\Script.mts
+LogOut=Action3\Script.mts
+SelectProduct=Action4\Script.mts
+SelectProductCategory=Action5\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -58,3 +62,15 @@ Action0\ObjectRepository.bdb=
 Action1\Script.mts=
 Action1\Resource.mtr=
 Action1\ObjectRepository.bdb=
+Action2\Script.mts=
+Action2\Resource.mtr=
+Action2\ObjectRepository.bdb=
+Action3\Script.mts=
+Action3\Resource.mtr=
+Action3\ObjectRepository.bdb=
+Action4\Script.mts=
+Action4\Resource.mtr=
+Action4\ObjectRepository.bdb=
+Action5\Script.mts=
+Action5\Resource.mtr=
+Action5\ObjectRepository.bdb=

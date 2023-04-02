@@ -1,0 +1,9 @@
+﻿Public Function takeScreenshot()
+	Set obj = CreateObject("Scripting.FileSystemObject")
+	If obj.FileExists("C:\Git\Store_AutomationTesting\Errors\ErrorScreenshot.png") Then
+		obj.DeleteFile("C:\Git\Store_AutomationTesting\Errors\ErrorScreenshot.png")
+	End If
+	Desktop.CaptureBitmap "C:\Git\Store_AutomationTesting\Errors\ErrorScreenshot.png"
+	takeScreenshot = "C:\Git\Store_AutomationTesting\Errors\ErrorScreenshot.png"
+End Function
+
