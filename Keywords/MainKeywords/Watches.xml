@@ -1,5 +1,4 @@
 ﻿<Properties>
-  <WatchEntry0 value="i" />
-  <WatchEntry1 value="objTable.RowCount" />
-  <WatchEntry2 value="objTable.GetCellData(i, 2)" />
+  <WatchEntry0 value="objTable.ChildItem(i, 3, &quot;WebElement&quot;).GetROProperty(&quot;innertext&quot;)" />
+  <WatchEntry1 value="objTable.ChildItemCount(i, 3, &quot;WebElement&quot;)" />
 </Properties>

@@ -1,5 +1,5 @@
-﻿If Browser("Chrome").Page("Home").Link("LogOut").Exist Then
-	Browser("Chrome").Page("Home").Link("LogOut").Click
+﻿If Browser("Chrome").Page("Store").Link("LogOut").Exist Then
+	Browser("Chrome").Page("Store").Link("LogOut").Click
 Else
 	Reporter.ReportEvent micFail, "Log Out", "Log Out link doesn't exist", takeScreenshot
 	ExitTest

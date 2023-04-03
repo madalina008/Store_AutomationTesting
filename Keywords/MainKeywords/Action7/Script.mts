@@ -1,6 +1,6 @@
 ﻿'Delete the product given as a parameter - add a keyword to check if the product was deleted
 Dim objTable, deleteButton
-Set objTable = Browser("Chrome").Page("Home").WebTable("Products")
+Set objTable = Browser("Chrome").Page("Store").WebTable("Products")
 
 Dim productExists
 productExists = False

@@ -21,6 +21,8 @@ AddProductToCart=Action6\Script.mts
 CheckIfProductExistsInCart=Action7\Script.mts
 DeleteProductFromCart=Action8\Script.mts
 PlaceOrder=Action9\Script.mts
+CheckTotalPrice=Action10\Script.mts
+CheckProductsPrice=Action11\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -87,3 +89,9 @@ Action8\ObjectRepository.bdb=
 Action9\Script.mts=
 Action9\Resource.mtr=
 Action9\ObjectRepository.bdb=
+Action10\Script.mts=
+Action10\Resource.mtr=
+Action10\ObjectRepository.bdb=
+Action11\Script.mts=
+Action11\Resource.mtr=
+Action11\ObjectRepository.bdb=

@@ -7,3 +7,5 @@ RunAction "AddProductToCart", oneIteration
 RunAction "CheckIfProductExistsInCart", oneIteration
 RunAction "DeleteProductFromCart", oneIteration
 RunAction "PlaceOrder", oneIteration
+RunAction "CheckTotalPrice", oneIteration
+RunAction "CheckProductsPrice", oneIteration
