@@ -19,7 +19,7 @@ Else
 	ExitTest
 End  If
 
-Wait(1)
+Wait(2)
 If Browser("Chrome").Page("Home").WebButton("LogIn").Exist Then
 	Browser("Chrome").Page("Home").WebButton("LogIn").Click
 Else

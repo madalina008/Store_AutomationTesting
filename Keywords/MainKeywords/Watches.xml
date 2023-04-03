@@ -1,1 +1,5 @@
-﻿<Properties />
+﻿<Properties>
+  <WatchEntry0 value="i" />
+  <WatchEntry1 value="objTable.RowCount" />
+  <WatchEntry2 value="objTable.GetCellData(i, 2)" />
+</Properties>

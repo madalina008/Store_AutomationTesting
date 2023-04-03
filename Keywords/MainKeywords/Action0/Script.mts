@@ -3,3 +3,7 @@ RunAction "Login", oneIteration
 RunAction "LogOut", oneIteration
 RunAction "SelectProduct", oneIteration
 RunAction "SelectProductCategory", oneIteration
+RunAction "AddProductToCart", oneIteration
+RunAction "CheckIfProductExistsInCart", oneIteration
+RunAction "DeleteProductFromCart", oneIteration
+RunAction "PlaceOrder", oneIteration

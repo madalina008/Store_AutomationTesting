@@ -1,4 +1,5 @@
-﻿Dim childObjects, oDesc
+﻿'Select the products category
+Dim childObjects, oDesc
 Set oDesc = Description.Create
 oDesc("micclass").Value = "Link"
 Set childObjects = Browser("Chrome").Page("Home").ChildObjects(oDesc)

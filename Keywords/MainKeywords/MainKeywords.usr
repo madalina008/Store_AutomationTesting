@@ -17,6 +17,10 @@ Login=Action2\Script.mts
 LogOut=Action3\Script.mts
 SelectProduct=Action4\Script.mts
 SelectProductCategory=Action5\Script.mts
+AddProductToCart=Action6\Script.mts
+CheckIfProductExistsInCart=Action7\Script.mts
+DeleteProductFromCart=Action8\Script.mts
+PlaceOrder=Action9\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -45,10 +49,7 @@ File Content=
 Insight=
 Windows Applications=
 TEA=
-UI Automation=
-Visual Basic=
 Web=
-WPF=
 XML=
 
 [ExtraFiles]
@@ -74,3 +75,15 @@ Action4\ObjectRepository.bdb=
 Action5\Script.mts=
 Action5\Resource.mtr=
 Action5\ObjectRepository.bdb=
+Action6\Script.mts=
+Action6\Resource.mtr=
+Action6\ObjectRepository.bdb=
+Action7\Script.mts=
+Action7\Resource.mtr=
+Action7\ObjectRepository.bdb=
+Action8\Script.mts=
+Action8\Resource.mtr=
+Action8\ObjectRepository.bdb=
+Action9\Script.mts=
+Action9\Resource.mtr=
+Action9\ObjectRepository.bdb=
