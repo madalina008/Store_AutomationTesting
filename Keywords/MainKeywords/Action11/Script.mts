@@ -2,7 +2,7 @@
 totalPrice = 0
 
 Dim objTable, priceElement
-Set objTable = Browser("Chrome").Page("Store").WebTable("Products")
+Set objTable = Browser("Chrome").Page("Cart").WebTable("Products")
 For i = 2 to objTable.RowCount
         priceString = objTable.GetCellData(i, 3)
         totalPrice = totalPrice + CInt(priceString)

@@ -1,0 +1,5 @@
+﻿<Properties>
+  <WatchEntry0 value="rowCount" />
+  <WatchEntry1 value="Parameter(&quot;ProductName&quot;)" />
+  <WatchEntry2 value="childObjects(i).GetROProperty(&quot;innertext&quot;)" />
+</Properties>

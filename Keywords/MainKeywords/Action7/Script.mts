@@ -1,6 +1,6 @@
 ﻿'Delete the product given as a parameter - add a keyword to check if the product was deleted
-Dim objTable, deleteButton
-Set objTable = Browser("Chrome").Page("Store").WebTable("Products")
+Dim objTable
+Set objTable = Browser("Chrome").Page("Cart").WebTable("Products")
 
 Dim productExists
 productExists = False
@@ -12,7 +12,7 @@ For i = 1 to objTable.RowCount
 Next
 
 If productExists = True Then
-	Reporter.ReportEvent micPass,"The presence of the product in the cart", Parameter("ProductName") + "exists in the Cart"
+	Reporter.ReportEvent micPass,"The presence of the product in the cart", Parameter("ProductName") + " exists in the Cart"
 Else
-	Reporter.ReportEvent micFail, "The presence of the product in the cart", Parameter("ProductName") + "doesn't exist in the Cart", takeScreenshot
+	Reporter.ReportEvent micFail, "The presence of the product in the cart", Parameter("ProductName") + " doesn't exist in the Cart", takeScreenshot
 End If

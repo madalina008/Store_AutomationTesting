@@ -9,6 +9,7 @@ Set childObjects = Browser("Chrome").Page("Store").ChildObjects(oDesc)
 For i = 0 To childObjects.Count - 1
    If childObjects(i).GetROProperty("innertext")  = Parameter("ProductName") Then
    	childObjects(i).Click()
+   	Exit For
    End If
 Next
 
