@@ -1,4 +1,4 @@
-﻿RunAction "OpenBrowser [MainKeywords]", oneIteration, dataTable.Value("URL", dtGlobalSheet)
+﻿RunAction "OpenBrowser [MainKeywords]", oneIteration, dataTable("URL", dtGlobalSheet)
 RunAction "Login [MainKeywords]", oneIteration, dataTable.Value("Username", dtGlobalSheet), dataTable.Value("Password", dtGlobalSheet)
 Dim welcomeMessage
 RunAction "CheckWelcomeMessage [MainKeywords]", oneIteration, dataTable.Value("Username", dtGlobalSheet), welcomeMessage
@@ -10,9 +10,9 @@ Else
 End If
 
 Set globalSheet = dataTable.GetSheet("Global")
-
 rowCount = globalSheet.GetRowCount
 
+'Add products to Cart
 For i = 1 To rowCount
 	dataTable.SetCurrentRow i
 	
@@ -28,5 +28,29 @@ For i = 1 To rowCount
 	RunAction "GoToHome [MainKeywords]", oneIteration
 Next
 
-'RunAction "GoToCart [MainKeywords]", oneIteration
+RunAction "GoToCart [MainKeywords]", oneIteration
+
+'Delete products from cart
+For i = 1 To rowCount
+	dataTable.SetCurrentRow i
+	productName = dataTable.Value("ProductsName")
+	RunAction "DeleteProductFromCart [MainKeywords]", oneIteration, productName
+	Wait(3)
+Next
+
+'Check if Cart is Empty
+Dim productExistence
+For i = 1 To rowCount
+	dataTable.SetCurrentRow i
+	productName = dataTable.Value("ProductsName")
+	RunAction "CheckIfProductExistsInCart [MainKeywords]", oneIteration, productName, productExistence
+	
+	If productExistence = false Then
+		Reporter.ReportEvent micPass, "Product existence", "Product " + productName + " doesn't exist in Cart"
+	Else
+		Reporter.ReportEvent micFail, "Product existence", "Product " + productName + " exists in Cart", takeScreenshot
+		ExitTest
+	End If
+Next
+
 

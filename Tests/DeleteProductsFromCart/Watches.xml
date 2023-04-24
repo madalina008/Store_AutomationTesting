@@ -1,3 +1,5 @@
 ﻿<Properties>
   <WatchEntry0 value="rowCount" />
+  <WatchEntry1 value="Parameter(&quot;StartPage&quot;)" />
+  <WatchEntry2 value="productName" />
 </Properties>

@@ -12,7 +12,7 @@ For i = 1 to objTable.RowCount
 Next
 
 If productExists = True Then
-	Reporter.ReportEvent micPass,"The presence of the product in the cart", Parameter("ProductName") + " exists in the Cart"
+	Parameter("ProductExistence") = true
 Else
-	Reporter.ReportEvent micFail, "The presence of the product in the cart", Parameter("ProductName") + " doesn't exist in the Cart", takeScreenshot
+	Parameter("ProductExistence") = false
 End If
