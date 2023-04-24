@@ -1,0 +1,3 @@
+﻿<Properties>
+  <WatchEntry0 value="Browser(&quot;Chrome&quot;).Page(&quot;Store&quot;).Image(&quot;Image&quot;).GetROProperty(&quot;alt&quot;)" />
+</Properties>

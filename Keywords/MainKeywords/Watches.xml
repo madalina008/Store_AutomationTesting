@@ -1,4 +1,4 @@
 ﻿<Properties>
-  <WatchEntry0 value="objTable.ChildItem(i, 3, &quot;WebElement&quot;).GetROProperty(&quot;innertext&quot;)" />
-  <WatchEntry1 value="objTable.ChildItemCount(i, 3, &quot;WebElement&quot;)" />
+  <WatchEntry0 value="Browser(&quot;Chrome&quot;).Page(&quot;Store&quot;).WebElement(&quot;ProductPrice&quot;).GetROProperty(&quot;innertext&quot;)" />
+  <WatchEntry1 value="&quot;$&quot; + Parameter(&quot;ProductPrice&quot;) + &quot; *includes tax&quot;" />
 </Properties>

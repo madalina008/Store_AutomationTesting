@@ -1,0 +1,4 @@
+﻿<Properties>
+  <WatchEntry0 value="Browser(&quot;Chrome&quot;).Page(&quot;Store&quot;).WebElement(&quot;ProductDescription&quot;).GetROProperty(&quot;innertext&quot;)" />
+  <WatchEntry1 value="Parameter(&quot;ProductDescription&quot;)" />
+</Properties>

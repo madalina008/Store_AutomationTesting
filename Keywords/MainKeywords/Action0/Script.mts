@@ -20,3 +20,6 @@ RunAction "VerifyAboutUsContent", oneIteration
 RunAction "GoToAboutUs", oneIteration
 RunAction "VerifyCartContent", oneIteration
 RunAction "GoToHome", oneIteration
+RunAction "SeeNextPicture", oneIteration
+RunAction "SeePreviousPicture", oneIteration
+RunAction "CheckProductInformation", oneIteration

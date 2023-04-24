@@ -1,4 +1,4 @@
-﻿SystemUtil.CloseProcessByName("chrome.exe")
+﻿'SystemUtil.CloseProcessByName("chrome.exe")
 
 SystemUtil.Run "chrome.exe", , , , mode_Maximized
 
