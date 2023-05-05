@@ -29,7 +29,7 @@ purchaseInfo = "Amount: " + CStr(totalPrice) + " USD" + "Card Number: " + Parame
 If InStr(purchase, purchaseInfo) > 0 Then
 	Reporter.ReportEvent micPass, "Purchase Information", "The purchase informetion is correct"
 Else
-	Reporter.ReportEvent micPass, "Purchase Information", "The purchase informetion is incorrect", takeScreenshot
+	Reporter.ReportEvent micFail, "Purchase Information", "The purchase informetion is incorrect", takeScreenshot
 	ExitTest
 End If
 
